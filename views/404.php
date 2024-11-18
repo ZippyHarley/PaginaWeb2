@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | 404 Page not found</title>
 
+  <?php require_once("modulos/css.php"); ?> 
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -21,7 +23,7 @@
           <h3><i class="fas fa-exclamation-triangle text-warning"></i> Oops! Page not found.</h3>
 
           <p>
-            gffsthdjyy <a href="../../index.html">return to dashboard</a> .
+            Error en la pagina <a href="../../index.html">volver al inicio</a> .
           </p>
 
           
@@ -30,7 +32,7 @@
       </div>
       <!-- /.error-page -->
     </section>
-
+    <?php require_once("modulos/js.php"); ?>
 
 <!-- jQuery -->
 <script src="../public/plugins/jquery/jquery.min.js"></script>

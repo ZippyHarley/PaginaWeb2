@@ -1,3 +1,12 @@
+<?php
+require_once("C:/Users/Lenovo/Desktop/xam/htdocs/Pagina/views/archivo.php");
+require_once("../config/conexion.php");
+
+if (isset($_SESSION["usu_id"])) {
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
