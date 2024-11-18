@@ -42,6 +42,6 @@ class Conectar {
     }
 
     public function ruta() {
-        return "http://localhost/pagina/";
+        return "http://localhost/pagina/views/home.php";
     }   
 }

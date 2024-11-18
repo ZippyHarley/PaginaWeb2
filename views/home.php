@@ -1,9 +1,7 @@
 <?php
-require_once("C:/Users/Lenovo/Desktop/xam/htdocs/Pagina/views/archivo.php");
+define("C:\xampp\htdocs\Pagina\bdsegunda","/pagina/views/");
 require_once("../config/conexion.php");
-
-if (isset($_SESSION["usu_id"])) {
-}
+if(isset($_SESSION["usu_id"]))
 ?>
 
 
