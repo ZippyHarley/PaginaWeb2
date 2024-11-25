@@ -1,10 +1,17 @@
+<?php
+
+$usuarioId = $_SESSION["usuario_id"] ?? null;
+$nombreUsuario = $_SESSION["nombre"] ?? "Invitado";
+?>
+
+
 <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="../views/inicio.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Usuarios
@@ -12,7 +19,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="../views/inicio.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Menu
@@ -20,7 +27,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="../views/inicio.php" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Social Media
@@ -30,7 +37,7 @@
       
           <li class="nav-header">SALIR</li>
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="../views/index.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Logout

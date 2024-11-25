@@ -1,10 +1,22 @@
+<?php require_once("config/conexion.php"); ?>
+
+<?php
+    require_once("models/Usuario.php");
+    $usuario = new Usuario();
+    $usu = $usuario->get_usuario();
+
+    require_once("models/Social_Media.php");
+    $social = new SocialMedia();
+    $soc = $social->get_socialMedia();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi pag web</title>
-    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\xam\htdocs\Pagina\public\css\style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 

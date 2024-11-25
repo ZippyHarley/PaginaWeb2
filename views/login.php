@@ -10,21 +10,33 @@ if (isset($_POST["enviar"]) && $_POST["enviar"] == "ok") {
     $password = trim($_POST["password"]);
 
     if (empty($email) || empty($password)) {
-      header("Location: login.php?m=2");
-      exit();
-  }
+        header("Location: login.php?m=2");
+        exit();
+    }
+
+    // Intentar realizar el login
+    $resultado = $usuario->login($email, $password);
   
-  $resultado = $usuario->login($email, $password);
-  
-  if ($resultado) {
-      header("Location: home.php");
-      exit();
-  } else {
-      header("Location: login.php?m=1");
-      exit();
-  }
+    if ($resultado) {
+        // Iniciar sesión
+        session_start();
+
+        // Guardar datos del usuario en variables de sesión
+        $_SESSION['usuario_id'] = $resultado['usuario_id']; // Cambiar según tu base de datos
+        $_SESSION['nombre'] = $resultado['nombre']; // Cambiar según tu base de datos
+        $_SESSION['email'] = $resultado['usu_correo']; // Cambiar según tu base de datos
+
+        // Redirigir al home
+        header("Location: home.php");
+        exit();
+    } else {
+        header("Location: login.php?m=1");
+        exit();
+    }
 }
 ?>
+  
+
 
 
 <!DOCTYPE html> 

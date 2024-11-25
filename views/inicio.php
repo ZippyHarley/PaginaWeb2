@@ -1,5 +1,5 @@
 <?php
-define("C:/Users/Lenovo/Desktop/xam/htdocs/Pagina/views/");
+define("C:\xam\xampp\htdocs\Pagina\bdsegunda","/pagina/views/");
 
 require_once("../config/conexion.php");
 if(isset($_SESSION["usu_id"]))
